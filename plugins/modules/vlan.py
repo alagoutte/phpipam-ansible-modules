@@ -33,10 +33,6 @@ options:
         description: Name of the given vlan
         type: str
         required: true
-    description:
-        description: A descriptive text for that entity
-        type: str
-        required: false
     vlan_id:
         description:
             - The VLAN-ID. Must be a number.

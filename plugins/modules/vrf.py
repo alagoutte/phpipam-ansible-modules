@@ -33,10 +33,6 @@ options:
         description: Name of the given vrf
         type: str
         required: true
-    description:
-        description: A descriptive text for that entity
-        type: str
-        required: false
     distinguisher:
         description: VRF route distinguisher
         type: str

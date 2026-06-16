@@ -33,10 +33,6 @@ options:
         description: Name of the given domain
         type: str
         required: true
-    description:
-        description: A descriptive text for that entity
-        type: str
-        required: false
     sections:
         description: List of sections where the nameserver appears
         type: list

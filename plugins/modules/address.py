@@ -50,10 +50,6 @@ options:
         type: bool
         required: false
         default: no
-    description:
-        description: Address description
-        type: str
-        required: false
     hostname:
         description: Address hostname
         type: str
