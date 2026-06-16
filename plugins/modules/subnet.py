@@ -46,10 +46,7 @@ options:
             - Prefix length (bits) for ipv4 and ipv6 subnets.
             - Mutually exclusive with I(cidr).
             - If set. I(subnet) is required.
-    description:
-        description: Text which is shown in side bar if 'show as name' is selected
-        type: str
-        required: false
+
     section:
         description: Name of the section under which the subnet is located
         type: int
