@@ -33,10 +33,6 @@ options:
         description: Name of the given device type
         type: str
         required: true
-    description:
-        description: A descriptive text for that entity
-        type: str
-        required: false
 extends_documentation_fragment:
     - codeaffen.phpipam.phpipam
     - codeaffen.phpipam.phpipam.entity_state

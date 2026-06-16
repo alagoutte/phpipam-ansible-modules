@@ -45,10 +45,6 @@ options:
             - User defined types can be created either via UI, API (e.g. I(device_type) ansible module within this collection).
         type: str
         required: false
-    description:
-        description: A descriptive text for that entity
-        type: str
-        required: false
     sections:
         description: List of sections where the device belongs to
         type: list
