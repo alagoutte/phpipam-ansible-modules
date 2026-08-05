@@ -78,7 +78,7 @@ options:
         description: The used SNMP port
         type: str
         required: false
-        default: 161
+        default: "161"
     snmp_timeout:
         description: The SNMP connection timeout
         type: str
