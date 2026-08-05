@@ -65,7 +65,7 @@ EXAMPLES = '''
     permissions: 1;2
     state: present
 
-- name: "Remove nameserver
+- name: "Remove nameserver"
   codeaffen.phpipam.nameserver:
     username: "admin"
     password: "s3cr3t"
