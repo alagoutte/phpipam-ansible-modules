@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        phpipam-version: ['v1.4x', 'v1.5x']
+        phpipam-version: ['v1.4x', 'v1.5x', 'v1.8x']
     steps:
       - name: Upgrade docker-compose
         run: sudo apt-get install --upgrade docker-compose
