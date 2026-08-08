@@ -84,7 +84,7 @@ options:
         type: str
         required: false
     snmp_queries:
-        description:
+        description: the SNMP Methods
         type: str
         required: false
     snmp_v3_sec_level:
