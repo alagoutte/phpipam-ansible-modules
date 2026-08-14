@@ -9,7 +9,7 @@ function info() {
 
 MYSQL_PING="mysqladmin ping -h ${DB_HOST:-127.0.0.1} -P ${DB_PORT:-3306} -u ${MYSQL_ROOT_USER:-root} -p${MYSQL_ROOT_PASSWORD:-rootpw}"
 
-if grep -qi podman <<< $(docker version 2> /dev/null) ; then
+if docker version 2>/dev/null | grep -qi podman; then
   info "Podman is installed"
   DOCKER_CMD=$(which podman)
 fi
