@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 
 # -*- coding: utf-8 -*-
 # (c) Christian Meißner 2020
@@ -33,10 +33,6 @@ options:
         description: Name of the given vlan
         type: str
         required: true
-    description:
-        description: A descriptive text for that entity
-        type: str
-        required: false
     vlan_id:
         description:
             - The VLAN-ID. Must be a number.
@@ -45,7 +41,7 @@ options:
         required: true
     routing_domain:
         description: Name of the L2 routing domain of that VLAN
-        type: string
+        type: str
         required: false
 extends_documentation_fragment:
     - codeaffen.phpipam.phpipam

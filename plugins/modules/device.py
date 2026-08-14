@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 
 # -*- coding: utf-8 -*-
 # (c) Christian Meißner 2020
@@ -45,14 +45,11 @@ options:
             - User defined types can be created either via UI, API (e.g. I(device_type) ansible module within this collection).
         type: str
         required: false
-    description:
-        description: A descriptive text for that entity
-        type: str
-        required: false
     sections:
         description: List of sections where the device belongs to
         type: list
         required: false
+        elements: str
     rack:
         description:
             - Rack where the device belongs to.
@@ -81,13 +78,13 @@ options:
         description: The used SNMP port
         type: str
         required: false
-        default: 161
+        default: "161"
     snmp_timeout:
         description: The SNMP connection timeout
         type: str
         required: false
     snmp_queries:
-        description:
+        description: the SNMP Methods
         type: str
         required: false
     snmp_v3_sec_level:

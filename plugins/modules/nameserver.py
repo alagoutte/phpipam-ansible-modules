@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 
 # -*- coding: utf-8 -*-
 # (c) Christian Meißner 2020
@@ -41,10 +41,12 @@ options:
         description: List of IP addresses the namerserver can be reached on
         type: list
         required: false
+        elements: str
     sections:
         description: List of sections where the nameserver appears
         type: list
         required: false
+        elements: str
 extends_documentation_fragment:
     - codeaffen.phpipam.phpipam
     - codeaffen.phpipam.phpipam.entity_state
@@ -63,7 +65,7 @@ EXAMPLES = '''
     permissions: 1;2
     state: present
 
-- name: "Remove nameserver
+- name: "Remove nameserver"
   codeaffen.phpipam.nameserver:
     username: "admin"
     password: "s3cr3t"

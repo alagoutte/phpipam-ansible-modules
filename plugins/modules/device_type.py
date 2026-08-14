@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 
 # -*- coding: utf-8 -*-
 # (c) Christian Meißner 2020
@@ -33,10 +33,6 @@ options:
         description: Name of the given device type
         type: str
         required: true
-    description:
-        description: A descriptive text for that entity
-        type: str
-        required: false
 extends_documentation_fragment:
     - codeaffen.phpipam.phpipam
     - codeaffen.phpipam.phpipam.entity_state
@@ -50,7 +46,6 @@ EXAMPLES = '''
     server_url: "https://ipam.example.com"
     name: "USP"
     description: "universal power supply"
-    description:
     state: present
 
 - name: "Remove device type"

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 
 # -*- coding: utf-8 -*-
 # (c) Christian Meißner 2021
@@ -141,8 +141,8 @@ def main():
     module_params['locked'] = 'yes' if module_params['is_locked'] else 'no'
     module_params['compress'] = 'yes' if module_params['compress_range'] else 'no'
 
-    del(module_params['is_locked'])
-    del(module_params['compress_range'])
+    del (module_params['is_locked'])
+    del (module_params['compress_range'])
 
     with module.api_connection():
         module.run()

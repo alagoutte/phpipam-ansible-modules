@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 
 # -*- coding: utf-8 -*-
 # (c) Christian Meißner 2020
@@ -33,10 +33,6 @@ options:
         description: Name of the given vrf
         type: str
         required: true
-    description:
-        description: A descriptive text for that entity
-        type: str
-        required: false
     distinguisher:
         description: VRF route distinguisher
         type: str
@@ -45,6 +41,7 @@ options:
         description: List of sections where the nameserver appears
         type: list
         required: false
+        elements: str
 extends_documentation_fragment:
     - codeaffen.phpipam.phpipam
     - codeaffen.phpipam.phpipam.entity_state
