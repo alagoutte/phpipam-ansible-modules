@@ -81,4 +81,4 @@ $api_stringify_results = true;
 ```
 ## Need help?
 
-If you’ve found any issues in this release please head over to github and open a bug so we can take a look.
+If you've found any issues in this release please head over to github and open a bug so we can take a look.
